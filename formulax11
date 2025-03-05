@@ -1,0 +1,21 @@
+package formulax11;
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        int N = 0;
+        Scanner sc = new Scanner(System.in);
+        while (N < 10) {
+            System.out.println("Nhap N:");
+            N = sc.nextInt();
+        }
+        int NN = N * 101;
+        int S = 0;
+        
+        for (int i = 11; i <= NN; i=i+11) {
+            S += i;
+        }
+        System.out.println("11 + 22 + 33 + ... + " + NN + " = " + S);
+    }
+}
